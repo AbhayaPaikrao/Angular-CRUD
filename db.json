@@ -1,0 +1,81 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "customer": [
+    {
+      "firstName": "Abhaya",
+      "lastName": "Paikrao",
+      "email": "paikraoabhaya@gmail.com",
+      "dob": "1997-05-21T18:30:00.000Z",
+      "gender": "female",
+      "education": "Bachelor Degree",
+      "company": "SVT",
+      "experience": 3.1,
+      "package": 9000,
+      "id": 1
+    },
+    {
+      "firstName": "Shubham",
+      "lastName": "Raskar",
+      "email": "shubham@gmail.com",
+      "dob": "1997-06-14T18:30:00.000Z",
+      "gender": "male",
+      "education": "Master Degree",
+      "company": "Deloitte",
+      "experience": 2,
+      "package": 4000,
+      "id": 2
+    },
+    {
+      "firstName": "Rushikesh",
+      "lastName": "Kadam",
+      "email": "rushikesh@kadam.com",
+      "dob": "1997-01-31T18:30:00.000Z",
+      "gender": "male",
+      "education": "Bachelor Degree",
+      "company": "Merkle",
+      "experience": 4,
+      "package": 8000,
+      "id": 3
+    },
+    {
+      "firstName": "Rupesh",
+      "lastName": "Chavan",
+      "email": "rupesh@chavan.com",
+      "dob": "1998-04-11T18:30:00.000Z",
+      "gender": "male",
+      "education": "Bachelor Degree",
+      "company": "PWC",
+      "experience": 1,
+      "package": 12000,
+      "id": 4
+    },
+    {
+      "firstName": "Sagar",
+      "lastName": "Khose",
+      "email": "sagar@khose.com",
+      "dob": "1997-04-25T18:30:00.000Z",
+      "gender": "male",
+      "education": "Master Degree",
+      "company": "Government of India",
+      "experience": 1,
+      "package": 16000,
+      "id": 5
+    }
+  ]
+}

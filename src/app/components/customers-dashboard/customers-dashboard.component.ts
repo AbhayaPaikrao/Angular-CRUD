@@ -1,20 +1,22 @@
 import { AfterViewInit, Component, ViewChild, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { CustomerAddEditComponent } from './components/customer-add-edit/customer-add-edit.component';
-import { CustomerService } from './services/customer.service';
+import { CustomerAddEditComponent } from '../customer-add-edit/customer-add-edit.component';
+
 import { MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
 import { MatSort, MatSortModule } from '@angular/material/sort';
 import { MatTableDataSource, MatTableModule } from '@angular/material/table';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import { CoreService } from './core/core.service';
+import { CoreService } from 'src/app/core/core.service';
+import { CustomerService } from 'src/app/services/customer.service';
+
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
+  selector: 'app-customers-dashboard',
+  templateUrl: './customers-dashboard.component.html',
+  styleUrls: ['./customers-dashboard.component.scss']
 })
-export class AppComponent implements OnInit {
+export class CustomersDashboardComponent {
   displayedColumns: string[] = [
     'id',
     'firstName',
@@ -90,7 +92,7 @@ export class AppComponent implements OnInit {
 
   getCustomerList() {
     this._customerService.getCustomer().subscribe({
-      next: (res) => {
+      next: (res:any) => {
         console.log('this.dataSource==> ', this.dataSource);
 
         this.dataSource = new MatTableDataSource(res);
@@ -114,7 +116,7 @@ export class AppComponent implements OnInit {
 
   deleteCustomer(id: number) {
     this._customerService.deleteCustomer(id).subscribe({
-      next: (res) => {
+      next: (res:any) => {
         this._coreService.openSnackBar('Customer deleted!!');
         this.getCustomerList();
       },
