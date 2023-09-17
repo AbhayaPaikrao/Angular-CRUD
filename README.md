@@ -13,6 +13,10 @@ git push -u origin main
 ---pull
 git pull origin main
 
+---Create branch
+git branch branchName
+git checkout -b branchname
+
 
 # json server
 npm install -g json-server
