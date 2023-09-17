@@ -13,7 +13,7 @@ git push -u origin main
 ---pull
 git pull origin main
 
-
+-------------------------
 # json server
 npm install -g json-server
 json-server --watch db.json
