@@ -2,8 +2,16 @@
 Angular Crud with Json Server
 ng add @angular/materia
 
-npm install -g json-server
 
+# git commands
+git status
+git add .
+git commit -m "any message"
+git push -u origin main
+
+
+# json server
+npm install -g json-server
 json-server --watch db.json
 
 # Crm
