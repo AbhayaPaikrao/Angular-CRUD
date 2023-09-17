@@ -4,10 +4,14 @@ ng add @angular/materia
 
 
 # git commands
+---push
 git status
 git add .
 git commit -m "any message"
 git push -u origin main
+
+---pull
+git pull origin main
 
 
 # json server
